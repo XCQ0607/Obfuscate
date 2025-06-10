@@ -30,7 +30,7 @@ jobs:
 
       - name: Obfuscate JS files
         run: |
-          for file in js/**/*.js; do
+          find js -type f -name "*.js" | while read file; do
             filename=$(basename "$file")
             echo "Obfuscating $file to obfuscator/$filename"
             javascript-obfuscator "$file" --output "obfuscator/$filename" \
