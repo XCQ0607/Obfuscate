@@ -6,7 +6,7 @@
 // 在这里直接定义变量，如果环境变量存在则优先使用环境变量
 const DEFAULT_USER_ID = '2982f122-9649-40dc-bc15-fa3ec91d8921';
 const DEFAULT_ACCESS_KEY = 'xcq0607';
-const DEFAULT_HOSTNAME = 'fix.chinax.nyc.mn';
+const DEFAULT_HOSTNAME = 'test.chinax.nyc.mn';
 // ================================================
 
 import { connect } from 'cloudflare:sockets';
@@ -5829,4 +5829,5 @@ async function handleRegionAPI(request, url) {
     } catch (error) {
         return new Response(`获取地区 ${region} 的数据失败: ${error.message}`, { status: 500 });
     }
+
 }
