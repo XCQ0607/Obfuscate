@@ -19,9 +19,7 @@ let nodeData = [];
 let lastRefreshTime = '';
 let proxyIP = '';
 // 默认代理IP池 - 与html.js保持一致
-const DEFAULT_PROXY_IPS = ["ProxyIP.JP.CMLiussss.net"];
-// 可取消注释以下行来启用更多代理IP
-// const DEFAULT_PROXY_IPS = ["ProxyIP.Vultr.CMLiussss.net","ProxyIP.Multacom.CMLiussss.net","ProxyIP.DigitalOcean.CMLiussss.net","ProxyIP.Oracle.cmliussss.net","ProxyIP.HK.CMLiussss.net","ProxyIP.US.CMLiussss.net","ProxyIP.SG.CMLiussss.net","ProxyIP.JP.CMLiussss.net","ProxyIP.HK.CMLiussss.net","ts.hpc.tw"];
+const DEFAULT_PROXY_IPS = [""];
 let DNS64Server = '';
 //let sub = '';
 let subConverter = atob('U1VCQVBJLkNNTGl1c3Nzcy5uZXQ=');
@@ -5831,3 +5829,4 @@ async function handleRegionAPI(request, url) {
     }
 
 }
+
